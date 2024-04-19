@@ -4,16 +4,21 @@ import Image_Enhance
 import Face_Detection
 import Face_Encoding
 import Face_Recognition
-import CSV_Generation
+import facegitgoing_facerecogn_2_0.CSV_Update as CSV_Update
 import Face_Detection
 import Face_Encoding
 import Face_Recognition
 import Image_Enhance
-import CSV_Generation
+import facegitgoing_facerecogn_2_0.CSV_Update as CSV_Update
 
 
 def main():
 
+    # Streamlit - Image input 
+
+
+
+    ####################################################################
     # 1. Enhancing Group Photos
 
     # Input and output directories
@@ -37,16 +42,28 @@ def main():
             output_path = os.path.join(enhanced_group_photos, filename)
             cv2.imwrite(output_path, processed_image)
 
+    ###################################################################
     # 2. Face detection 
 
 
+    ###################################################################
     # 3. Enhance Detected faces
 
 
+    ###################################################################
     # 4. Generate face encodings
 
-    
+
+    ###################################################################
     # 5. Face recognize
 
 
+    ###################################################################
     # 6. Update csv 
+
+
+    ###################################################################
+    # Streamlit - Display image
+
+    ###################################################################
+    # Streamlit - Display csv
