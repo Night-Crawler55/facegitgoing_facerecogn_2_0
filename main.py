@@ -1,11 +1,19 @@
+import cv2
+import os
 import Image_Enhance
 import Face_Detection
 import Face_Encoding
 import Face_Recognition
 import CSV_Generation
+import Face_Detection
+import Face_Encoding
+import Face_Recognition
+import Image_Enhance
+import CSV_Generation
 
 
 def main():
+
     # 1. Enhancing Group Photos
 
     # Input and output directories
@@ -29,4 +37,16 @@ def main():
             output_path = os.path.join(enhanced_group_photos, filename)
             cv2.imwrite(output_path, processed_image)
 
-    # 2. g
+    # 2. Face detection 
+
+
+    # 3. Enhance Detected faces
+
+
+    # 4. Generate face encodings
+
+    
+    # 5. Face recognize
+
+
+    # 6. Update csv 
