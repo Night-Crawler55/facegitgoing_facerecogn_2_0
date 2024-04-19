@@ -41,18 +41,27 @@ def main():
             # Save processed image to output folder
             output_path = os.path.join(enhanced_group_photos, filename)
             cv2.imwrite(output_path, processed_image)
-
+    
     ###################################################################
     # 2. Face detection 
-    
+
+    # enhanced_image = 
+    face_locs = Face_Detection.detect_faces_yolov3(enhanced_image)
+    detected_faces = []
+    for (right, bottom, left,top) in face_locations:
+        detect = enhanced_image[top:bottom, left:right]
+        detected_faces.append(detect)     
 
     ###################################################################
-    # 3. Enhance Detected faces
-
+    # 3. Enhance Detected faces - import face locations and ea
+    
+    for i,face in enumerate(detected_faces):
+        # enhacement function
+        pass
 
     ###################################################################
     # 4. Generate face encodings
-
+    
 
     ###################################################################
     # 5. Face recognize
